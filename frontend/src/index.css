@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,body, #root{
+  height: 100%;
+  width: 100%;
+}
+html{
+  background-color: rgb(27, 27, 27);
+  color: rgb(206, 206, 206);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
