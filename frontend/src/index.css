@@ -10,7 +10,31 @@ html,body, #root{
   width: 100%;
 }
 html{
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(10,10,10);
   color: rgb(206, 206, 206);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notes{
+  background-color: rgb(30,30,30);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.note{
+  background-color: rgb(50,50,50);
+  border: 1px solid grey;
+  padding: 1.2rem;
+  margin: 5px;
+  border-radius: 10px;
+  width: 350px;
+}
+.note h2{
+  border-bottom: 3px solid grey;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
