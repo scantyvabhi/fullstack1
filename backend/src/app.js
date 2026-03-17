@@ -2,8 +2,10 @@ const express = require("express")
 const noteModel = require('./models/note.model')
 const cors = require("cors")
 const app = express();
+const path  = require("path")
 app.use(cors())
 app.use(express.json());
+app.use(express.static("./public"))
 
 
 // APIs 
@@ -38,7 +40,7 @@ app.delete("/api/notes/:id", async (req, res) => {
     console.log(id)
     await noteModel.findByIdAndDelete(id)
 
-    res.status("200").json({
+    res.status(200).json({
         "message": "Note deleted successfully",
 
     })
@@ -58,7 +60,11 @@ app.patch("/api/notes/:id", (req, res) => {
 })
 
 
-
+// This API is used when the request is sent for that api which doesn't exit
+app.use('*name',(req,res)=>{
+    // res.send("This is wild card")
+    res.sendFile(path.join(__dirname,"..","/public/index.html"))
+})
 
 
 

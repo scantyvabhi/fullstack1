@@ -20,7 +20,7 @@ html{
   width: 100%;
   padding: 20px;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   flex-wrap: wrap;
   gap: 15px;
 }
@@ -31,10 +31,37 @@ html{
   padding: 1.2rem;
   margin: 5px;
   border-radius: 10px;
-  width: 350px;
+  width: 300px;
 }
 .note h2{
   border-bottom: 3px solid grey;
   padding-bottom: 5px;
   margin-bottom: 10px;
+}
+.create-note-form{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
+}
+.create-note-form label{
+  font-size: 1.2em;
+}
+.create-note-form input, button{
+  padding: 0.6rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+}
+
+.delete-btn{
+  background-color: rgb(200, 0, 0);
+  color: white;
+  margin: 15px 90px;
+}
+.delete-btn:hover{
+  background-color: rgb(255, 48, 48);
+  scale: 0.96;
 }
